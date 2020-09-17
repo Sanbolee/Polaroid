@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polaroid</title>
+
+    <!--    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/iconfont.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand mr-md-5 ml-md-3" href="#">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-listmore"></use>
+              </svg>
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav col-md-9">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">图片</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">视频</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbardrop"
+                       data-toggle="dropdown">
+                        更多
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" target="_blank">留言板</a>
+                        <a class="dropdown-item" href="#" target="_blank">工具箱</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Sanbolee" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="col-md-3">
+                <form method="get" action="search.html">
+                    <div class="input-group">
+                        <label for="search-input"></label>
+                        <input id="search-input" type="text" class="form-control" placeholder="搜索">
+                        <div class="input-group-append">
+                            <button class="btn search-btn" type="submit">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container content">
+
+    <div class="row">
+        <div class="col-sm-3 mt-4">
+            <div class="card">
+                <div class="author-avatar">
+                    <img class="card-img-top rounded-circle"
+                         src="https://avatars0.githubusercontent.com/u/18314958?s=460&u=756cda8ecfd18fb6cf0b356c1dd11cb10507aec5&v=4"
+                         alt="author">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title">SanboLee</h4>
+                    <p class="card-text">一个小白程序员的笔记</p>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%;">HTML
+                        </div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                             style="width: 40%;">JAVA
+                        </div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                             style="width: 50%;">Golang
+                        </div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                             style="width: 60%;">JavaScript
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                             style="width: 70%;">CSS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body"><h4 class="card-title">标签</h4>
+                    <p class="card-text">每次随机展示15个标签</p>
+                    <div class="badge mb-2 mr-2 badge-primary"><a href="index.html" class="tag"> java </a></div>
+                    <div class="badge mb-2 mr-2 badge-success"><a href="index.html" class="tag"> php </a></div>
+                    <div class="badge mb-2 mr-2 badge-info"><a href="index.html" class="tag"> golang </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> macos </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> windows </a></div>
+                    <div class="badge mb-2 mr-2 badge-success"><a href="index.html" class="tag"> linux </a></div>
+                    <div class="badge mb-2 mr-2 badge-primary"><a href="index.html" class="tag"> docker </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> phpstorm </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> webstorm </a></div>
+                    <div class="badge mb-2 mr-2 badge-primary"><a href="index.html" class="tag"> idea </a></div>
+                    <div class="badge mb-2 mr-2 badge-success"><a href="index.html" class="tag"> goland </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> pycharm </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> sublime3 </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> typora </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> javascript </a></div>
+                </div>
+            </div>
+            <div id="accordion" class="time-line mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            2018年 <span class="badge badge-primary float-right">12</span>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        1月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        2月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        3月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            2019年 <span class="badge badge-primary float-right">8</span>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        1月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        2月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            2020年 <span class="badge badge-primary float-right">4</span>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        1月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-9 mt-4">
+            <nav class="breadcrumb single-post-breadcrumb mt-md-n3">
+                <a class="breadcrumb-item" href="index.html">首页</a>
+                <span class="breadcrumb-item active">Mac 系统下编译安装PHP Redis 扩展</span>
+            </nav>
+            <article class="single-post-content">
+                <header>
+                    <h5 class="post-meta">
+                        <span>2月26日, 2019</span>
+                        <span class="float-right">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-eye"></use>
+                            </svg> 5
+                        </span>
+                    </h5>
+                    <h2 class="post-title">Mac 系统下编译安装PHP Redis 扩展</h2>
+                </header>
+                <div class="post-content">
+                    <div class="nc-light-gallery">
+                        <p>1. 首先看一下是否已经安装了PHP扩展</p>
+                        <ul>
+                            <li>
+                                <span class="hljs-meta">$</span>
+                                <span class="bash"> php -m</span>
+                            </li>
+                        </ul>
+                        <p>如果显示有redis，那可以关闭这篇文章了。</p>
+                        <p>没有的话，我们继续</p>
+                        <p>2. 进入<a href="http://pecl.php.net/package/redis" target="_blank" rel="noopener">PHP官网</a>下载redis扩展下载扩展
+                        </p>
+                        <p>例如下载<a href="http://pecl.php.net/get/redis-5.3.1.tgz">redis-5.3.1.tgz</a></p>
+                        <p>3. 解压压缩包，然后进入redis-5.3.1文件夹</p>
+                        <ul>
+                            <li>
+                                <span class="hljs-meta">$</span>
+                                <span class="bash"> phpize &amp;&amp; ./configure</span>
+                            </li>
+                        </ul>
+                        <p>4. 编译</p>
+                        <ul>
+                            <li>
+                                <span class="hljs-meta">$</span>
+                                <span class="bash"> make &amp;&amp; make install</span>
+                            </li>
+                        </ul>
+                        <p>如果这里出现类似下面的错误：</p>
+                        <ul>
+                            <li>mkdir: /usr/local/Cellar/php@7.3/7.3.13/pecl: File exists</li>
+                            <li>mkdir: /usr/local/Cellar/php@7.3/7.3.13/pecl: No such file or directory</li>
+                            <li>make: *** [install-modules] Error 1</li>
+                        </ul>
+                        <p>按照下面的步骤可解决：</p>
+                        <ul>
+                            <li>打开 /usr/local/Cellar/php@7.3/7.3.13/bin/php-config&nbsp;</li>
+                            <li>extension_dir='/usr/local/Cellar/php@7.3/7.3.13/lib/20180731' 中的 『pecl』 换成 『lib』</li>
+                            <li>重新执行第3步</li>
+                        </ul>
+                        <p>如果显示类似如下信息，则表示成功 🍎</p>
+                        <ul>
+                            <li>Installing shared extensions: /usr/local/Cellar/php@7.3/7.3.13/lib/20180731/</li>
+                        </ul>
+                        <p>5. 配置 php.ini文件，一般位置在/usr/local/etc/php/7.3/php.ini，打开添加extension="redis.so"</p>
+                        <p>6. 重新执行步骤1看看是否有redis扩展了。</p>
+                        <p>如果还是没有，那么看看php.ini文件里的这行extension_dir =
+                            "/usr/local/Cellar/php@7.3/7.3.13/lib/20180731"是否和上面🍎 那里的路径一样，如果不一样就改成一样即可。</p>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <span class="mr-2">#</span>
+                    <span class="badge badge-primary mb-2 mr-2">Linux</span>
+                    <span class="badge badge-info mb-2 mr-2">PHP</span>
+                    <span class="badge badge-warning mb-2 mr-2">Laravel</span>
+                </div>
+            </article>
+
+            <div class="card border-top border-bottom border-light py-3 mt-4 pl-3 pr-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-left">
+                            <div class="text-muted mb-md-1">
+                                <a href="index.html" class="font-theme text-xl">PREV</a>
+                            </div>
+                            <a href="index.html" class="d-none d-md-block text-sm">
+                                <div class="pager-title">关于Redis中缓存穿透、缓存击穿、缓存雪崩、数据一致性的总结</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right">
+                            <div class="text-muted mb-md-1">
+                                <a href="index.html" class="font-theme text-xl">NEXT</a>
+                            </div>
+                            <a href="index.html" class="d-none d-md-block text-sm">
+                                <div class="pager-title">GitHub无法加载头像和图片的解决办法</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-white mt-4" id="footer">
+    <div class="container text-center pb-3 pt-4">
+        <h5 class="copyright">Copyright &copy; 2020. Company
+            <a href="https://github.com/Sanbolee" title="SanboLee" target="_blank">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+                SanboLee
+            </a>
+            All rights reserved - Collect from
+            <a href="https://www.sanbolee.top" title="SanboLee" target="_blank">
+                SanboLee
+            </a>️
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-tubiao-"></use>
+            </svg>
+        </h5>
+    </div>
+</footer>
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

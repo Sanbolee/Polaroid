@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*=========Global==========*/
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+body, .breadcrumb {
+    background: #f8f9fa;
+}
+
+.form-control:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+    box-shadow: unset;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: unset;
+}
+
+.card {
+    border: unset;
+}
+
+.content {
+    margin-top: 120px;
+}
+
+.null-data {
+    min-height: 75vh;
+}
+
+/* navbar start */
+.navbar {
+    background: #ffffff;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline-color: transparent;
+}
+
+.navbar-toggler-icon .icon {
+    font-size: 30px;
+}
+
+.dropdown-menu {
+    border: unset;
+}
+
+#search-input {
+    background: #f8f9fa;
+    border: unset;
+}
+
+.search-btn {
+    background: #f8f9fa;
+}
+
+/* navbar start */
+
+/* author start */
+.author-avatar {
+    margin: -40px auto 0;
+    width: 108px;
+    height: 108px;
+}
+
+/* author end */
+
+/* tags start */
+.tag, .tag:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* tags start */
+
+/* time-line start */
+.time-line .card-header {
+    background-color: unset;
+    border-bottom: unset;
+}
+
+.time-line .badge {
+    margin-top: 3px;
+}
+
+/* time-line end */
+
+/* post start */
+.post {
+    -webkit-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+}
+
+.post .card-img-link {
+    width: 90%;
+    margin: -10px auto 0;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.post .card-title {
+    font-size: 1.25rem;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.post .card-title-link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.post .card-text {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.75rem;
+}
+
+.post:hover, .post:focus {
+    cursor: pointer;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+/* post end */
+
+/* footer start */
+.copyright {
+    font-size: 16px;
+}
+
+/* footer end */
+
+/* single-post start */
+.single-post-breadcrumb {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.single-post-breadcrumb .active {
+    width: 90%;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.single-post-content {
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    text-align: justify;
+    text-justify: newspaper;
+    word-break: break-all;
+}
+
+.single-post-content header {
+    padding: 25px 30px 0 25px;
+}
+
+.single-post-content header .post-meta {
+    margin: 0;
+    line-height: 1;
+    color: #ccc;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.single-post-content .post-title {
+    font-family: "Dosis", sans-serif;
+    line-height: 1.25;
+    margin: 15px 0;
+}
+
+.single-post-content .post-content {
+    margin: 0;
+    padding: 0 30px;
+}
+
+.single-post-content img {
+    max-width: 100%;
+}
+
+/* single-post end */
+
+/* single-post-tags start */
+.tags {
+    padding: 30px;
+}
+
+/* single-post-tags end */
+
+/* single-post-pager start */
+.pager-title {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+/* single-post-pager end */

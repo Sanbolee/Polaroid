@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polaroid</title>
+
+    <!--    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/iconfont.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand mr-md-5 ml-md-3" href="#">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-listmore"></use>
+              </svg>
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav col-md-9">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">图片</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">视频</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbardrop"
+                       data-toggle="dropdown">
+                        更多
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" target="_blank">留言板</a>
+                        <a class="dropdown-item" href="#" target="_blank">工具箱</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Sanbolee" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="col-md-3">
+                <form method="get" action="search.html">
+                    <div class="input-group">
+                        <label for="search-input"></label>
+                        <input id="search-input" type="text" class="form-control" placeholder="搜索">
+                        <div class="input-group-append">
+                            <button class="btn search-btn" type="submit">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container content">
+    <div class="row">
+        <div class="col-sm-3 mt-4">
+            <div class="card">
+                <div class="author-avatar">
+                    <img class="card-img-top rounded-circle"
+                         src="https://avatars0.githubusercontent.com/u/18314958?s=460&u=756cda8ecfd18fb6cf0b356c1dd11cb10507aec5&v=4"
+                         alt="author">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title">SanboLee</h4>
+                    <p class="card-text">一个小白程序员的笔记</p>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%;">HTML
+                        </div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                             style="width: 40%;">JAVA
+                        </div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                             style="width: 50%;">Golang
+                        </div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                             style="width: 60%;">JavaScript
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                             style="width: 70%;">CSS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body"><h4 class="card-title">标签</h4>
+                    <p class="card-text">每次随机展示15个标签</p>
+                    <div class="badge mb-2 mr-2 badge-primary"><a href="index.html" class="tag"> java </a></div>
+                    <div class="badge mb-2 mr-2 badge-success"><a href="index.html" class="tag"> php </a></div>
+                    <div class="badge mb-2 mr-2 badge-info"><a href="index.html" class="tag"> golang </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> macos </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> windows </a></div>
+                    <div class="badge mb-2 mr-2 badge-success"><a href="index.html" class="tag"> linux </a></div>
+                    <div class="badge mb-2 mr-2 badge-primary"><a href="index.html" class="tag"> docker </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> phpstorm </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> webstorm </a></div>
+                    <div class="badge mb-2 mr-2 badge-primary"><a href="index.html" class="tag"> idea </a></div>
+                    <div class="badge mb-2 mr-2 badge-success"><a href="index.html" class="tag"> goland </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> pycharm </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> sublime3 </a></div>
+                    <div class="badge mb-2 mr-2 badge-danger"><a href="index.html" class="tag"> typora </a></div>
+                    <div class="badge mb-2 mr-2 badge-warning"><a href="index.html" class="tag"> javascript </a></div>
+                </div>
+            </div>
+            <div id="accordion" class="time-line mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            2018年 <span class="badge badge-primary float-right">12</span>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        1月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        2月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        3月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            2019年 <span class="badge badge-primary float-right">8</span>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        1月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        2月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            2020年 <span class="badge badge-primary float-right">4</span>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="card-link" href="index.html">
+                                        1月 <span class="badge badge-primary float-right">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-9 mt-4">
+            <div class="have-data">
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/2249055/pexels-photo-2249055.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                     alt="解决git pull/push每次都需要输入密码问题" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="解决git pull/push每次都需要输入密码问题">
+                                        解决git pull/push每次都需要输入密码问题
+                                    </h4>
+                                    <p class="card-text mb-3"
+                                       title="如果我们git clone的下载代码的时候是连接的https://而不是git@git (ssh)的形式，当我们操作git pull/push到远程的时候，总是提示我们输入账号和密码才能操作成功，频繁的输入账号和密码会很麻烦。">
+                                        如果我们git clone的下载代码的时候是连接的https://而不是git@git (ssh)的形式，当我们操作git
+                                        pull/push到远程的时候，总是提示我们输入账号和密码才能操作成功，频繁的输入账号和密码会很麻烦。
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                图片<span class="float-right">2月3日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/3312569/pexels-photo-3312569.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                     alt="Nginx配置例子（中文注释）" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="Nginx配置例子（中文注释）">
+                                        Nginx配置例子（中文注释）
+                                    </h4>
+                                    <p class="card-text mb-3" title="一份Nginx配置参数中文详细说明">
+                                        一份Nginx配置参数中文详细说明
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                视频<span class="float-right">2月4日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/4321944/pexels-photo-4321944.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                                     alt="Nginx多台服务器实现负载均衡例子" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="Nginx多台服务器实现负载均衡例子">
+                                        Nginx多台服务器实现负载均衡例子
+                                    </h4>
+                                    <p class="card-text mb-3"
+                                       title="Nginx多台服务器实现负载均衡例子，只是简单用三台服务器实现和介绍一下负载均衡的实现流程，真实的生产环境上服务器会比这个多得多，真正的优势才能体现出来">
+                                        Nginx多台服务器实现负载均衡例子，只是简单用三台服务器实现和介绍一下负载均衡的实现流程，真实的生产环境上服务器会比这个多得多，真正的优势才能体现出来
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                图片<span class="float-right">2月5日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/4275561/pexels-photo-4275561.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                     alt="Card image" class="card-img-top">
+                            </a>
+                            <div class="card-body"><a href="single.html" class="card-title-link">
+                                <h4 class="card-title"
+                                    title="Golang「Invalid operation: nums[j] (type *[]int does not support indexing)」（问题记录）">
+                                    Golang「Invalid operation: nums[j] (type *[]int does not support indexing)」（问题记录）
+                                </h4>
+                                <p class="card-text mb-3"
+                                   title="今天学习Go的时候，使用指针时，出现了错误提示：Invalid operation: nums[j] (type  *[]int does not
+                                  support indexing)">
+                                    今天学习Go的时候，使用指针时，出现了错误提示：Invalid operation: nums[j] (type "*[]int does not support
+                                    indexing)
+                                </p>
+                            </a>
+                                <span class="blockquote-footer">
+                                文章<span class="float-right">2月6日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://farm3.staticflickr.com/2894/32735073444_3b47140187_z.jpg"
+                                     alt="关于递归函数执行流程的一些分析与记录，示例代码用Golang编写" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="关于递归函数执行流程的一些分析与记录，示例代码用Golang编写">
+                                        关于递归函数执行流程的一些分析与记录，示例代码用Golang编写
+                                    </h4>
+                                    <p class="card-text mb-3"
+                                       title="递归函数，对于第一次接触的人来说，刚开始有些难以理解，可能会被绕懵，下面是我理解递归的执行流程一些记录">
+                                        递归函数，对于第一次接触的人来说，刚开始有些难以理解，可能会被绕懵，下面是我理解递归的执行流程一些记录
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                文章<span class="float-right">2月7日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/4328961/pexels-photo-4328961.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                     alt="Mac系统MAMP、PhpStorm配置PHP的Xdebug环境" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="Mac系统MAMP、PhpStorm配置PHP的Xdebug环境">
+                                        Mac系统MAMP、PhpStorm配置PHP的Xdebug环境
+                                    </h4>
+                                    <p class="card-text mb-3" title="在Mac系统下给MAMP、PhpStorm配置PHP的Debug环境，用于调试程序">
+                                        在Mac系统下给MAMP、PhpStorm配置PHP的Debug环境，用于调试程序
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                视频<span class="float-right">2月8日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/3922221/pexels-photo-3922221.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                     alt="Laravel Class 'Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory' not found（问题记录）"
+                                     class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title"
+                                        title="Laravel Class 'Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory' not found（问题记录）">
+                                        Laravel Class 'Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory' not
+                                        found（问题记录）
+                                    </h4>
+                                    <p class="card-text mb-3"
+                                       title="在使用\GuzzleHttp\Client这个包的时候发现出现了Class 'Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory' not found错误，找到解决方法，所以记录一下">
+                                        在使用\GuzzleHttp\Client这个包的时候发现出现了"Class
+                                        'Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory' not
+                                        found"错误，找到解决方法，所以记录一下
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                图片<span class="float-right">2月9日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/1976755/pexels-photo-1976755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                     alt="composer 安装提示killed解决办法" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="composer 安装提示killed解决办法">
+                                        composer 安装提示killed解决办法
+                                    </h4>
+                                    <p class="card-text mb-3" title="今天在服务器上执行composer update时，发现进程被杀死，找到了解决方法">
+                                        今天在服务器上执行composer update时，发现进程被杀死，找到了解决方法
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                文章<span class="float-right">2月10日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/4462784/pexels-photo-4462784.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                     alt="Laravel 好用的生成模拟数据工具 Faker" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="Laravel 好用的生成模拟数据工具 Faker">
+                                        Laravel 好用的生成模拟数据工具 Faker
+                                    </h4>
+                                    <p class="card-text mb-3" title="记录一下模拟数据工具Faker的用法">
+                                        记录一下模拟数据工具Faker的用法
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                文章<span class="float-right">2月11日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/4203096/pexels-photo-4203096.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                     alt="CentOS7防火墙Firewalld的使用" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="CentOS7防火墙Firewalld的使用">
+                                        CentOS7防火墙Firewalld的使用
+                                    </h4>
+                                    <p class="card-text mb-3" title="记录关于CentOS7防火墙Firewalld的使用">
+                                        记录关于CentOS7防火墙Firewalld的使用
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                图片<span class="float-right">2月12日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://images.pexels.com/photos/4298000/pexels-photo-4298000.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                     alt="Linux彻底完全卸载安装软件（e.g. php mysql nginx ……）" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="Linux彻底完全卸载安装软件（e.g. php mysql nginx ……）">
+                                        Linux彻底完全卸载安装软件（e.g. php mysql nginx ……）
+                                    </h4>
+                                    <p class="card-text mb-3" title="Linux彻底完全卸载安装软件，以Centos7和Mysql为例子">
+                                        Linux彻底完全卸载安装软件，以Centos7和Mysql为例子
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                视频<span class="float-right">2月13日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="post card">
+                            <a href="single.html" class="card-img-link">
+                                <img src="https://farm3.staticflickr.com/2946/33107045414_7f628df4a5_z.jpg"
+                                     alt="Linux下全局安装Composer" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="single.html" class="card-title-link">
+                                    <h4 class="card-title" title="Linux下全局安装Composer">
+                                        Linux下全局安装Composer
+                                    </h4>
+                                    <p class="card-text mb-3" title="Linux下全局安装Composer，本文演示的系统为CentOS7">
+                                        Linux下全局安装Composer，本文演示的系统为CentOS7
+                                    </p>
+                                </a>
+                                <span class="blockquote-footer">
+                                文章<span class="float-right">2月14日, 2019</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-3 mb-3">
+                    <a href="#" class="know-more">查看更多</a>
+                </div>
+            </div>
+            <!--            <div class="py-4 py-md-5">-->
+            <!--                <div class="container">-->
+            <!--                    <div class="d-flex flex-column flex-fill text-center null-data">-->
+            <!--                        <div class="m-auto">-->
+            <!--                            <div class="font-theme display-2">NULL</div>-->
+            <!--                            <div class="text-muted">Not Found Not Found Not Found……</div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </div>
+</div>
+
+<footer class="bg-white mt-4" id="footer">
+    <div class="container text-center pb-3 pt-4">
+        <h5 class="copyright">Copyright &copy; 2020. Company
+            <a href="https://github.com/Sanbolee" title="SanboLee" target="_blank">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+                SanboLee
+            </a>
+            All rights reserved - Collect from
+            <a href="https://www.sanbolee.top" title="SanboLee" target="_blank">
+                SanboLee
+            </a>️
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-tubiao-"></use>
+            </svg>
+        </h5>
+    </div>
+</footer>
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
