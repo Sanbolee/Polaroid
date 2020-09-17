@@ -37,6 +37,17 @@ body, .breadcrumb {
     min-height: 75vh;
 }
 
+
+.tag-header span, .time-header span {
+    position: relative;
+}
+
+.tag-header span sub, .time-header span sub {
+    position: absolute;
+    right: -1.5rem;
+    color: #007bff;
+}
+
 /* navbar start */
 .navbar {
     background: #ffffff;
@@ -79,6 +90,7 @@ body, .breadcrumb {
     color: #ffffff;
     text-decoration: none;
 }
+
 /* tags start */
 
 /* time-line start */
