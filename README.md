@@ -6,4 +6,5 @@
 作用：可用于搭建个人博客。
 ## Preview  
 <p align="center"><a href="https://github.com/Sanbolee/Polaroid" target="_blank"><img src="https://github.com/Sanbolee/Polaroid/raw/master/preview/home.png"></a></p>
+
 > Vue版本的前台、后台，PHP、JAVA、Golang、Python开发的API也在提上日程中
